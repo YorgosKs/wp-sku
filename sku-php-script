@@ -1,3 +1,4 @@
+<?php
 /**
  * Use multiple sku's to find WOO products in wp-admin
  * NOTE: Use '|' as a sku delimiter in your search query. Example: '1234|1235|1236'
@@ -45,3 +46,4 @@ if ( 'product' === $typenow && isset( $_GET['s'] ) && 'edit.php' === $pagenow ) 
 return $query_vars;
 }
 add_filter( 'request', 'woo_multiple_sku_search', 20 );
+?>
